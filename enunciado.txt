@@ -1,0 +1,14 @@
+Para realizar este ejercicio se neceseita hacer backtraking por lo que no se tiene una bandera. 
+Quiero que desarrolle un algoritmo completo en python con simulación que permita resolver el ejercicio
+el enunciado es el siguiente:
+
+Elaborar un programa que permita la simulación computacional de un autómata de pila que reconozca el 
+lengaje L = {a^nw^mw^(-m)d^n con b,m >= 0,
+w = (b+c)^*}
+Se debe incluir animación gráfica de los estados (con indicador n y m) y el contenido de la pila.
+Las cadenas a analizar se deberán poder ingresar mediante una interfaz dispuesta para ello.
+
+Intenta hacerlo utilizando Widgets
+E instala todoas las extensions que sean necesarias para que no se produzcan estos errores
+
+Quiero que tengas en cuenta ue w^(-m) se entiende como la subcadena inversa de w^m

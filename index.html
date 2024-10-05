@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Cadenas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Enunciado del problema -->
+        <div id="enunciado">
+            <p>
+                Elaborar un programa que permita la simulación computacional de un autómata de pila que reconozca el lenguaje:
+            </p>
+            <p>
+                \( L = \{a^n w^m w^{-m} d^n \; | \; n,m \geq 0, w = (b+c)^*\} \)
+            </p>
+            <p>
+                Se debe incluir animación gráfica de los estados (con indicador \(n\) y \(m\)) y el contenido de la pila. Las cadenas a analizar se deberán poder ingresar mediante una interfaz dispuesta para ello.
+            </p>
+        </div>
+        
+        <!-- Título del simulador -->
+        <h2>Simulador de Cadenas</h2>
+        
+        <p>Ingresa una cadena para evaluar:</p>
+        <input type="text" id="cadena" class="form-control" placeholder="Ingresa la cadena" />
+        <button id="simular-btn" class="btn btn-success">Simular</button>
+        <button id="detener-btn" class="btn btn-danger d-none">Detener Simulación</button>
+        <div class="result" id="resultado"></div>
+        <div id="svg-container">
+            <svg id="pila"></svg>
+        </div>
+    </div>
+
+    <!-- Información del autor y la institución -->
+    <footer class="footer">
+        <p>Autor: José Alfredo Martínez Valdés</p>
+        <p>Email: <a href="mailto:jose.martinez7@udea.edu.co">jose.martinez7@udea.edu.co</a></p>
+        <p>Teléfono: +573017690703</p>
+        <p>Universidad de Antioquia</p>
+        <p>Curso: Teoría de Lenguajes y Laboratorio</p>
+        <p>Profesor: Rubén Darío Ángel Correa</p>
+        <p>Año: 2024</p>
+    </footer>
+
+    <script src="AutomataPila.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
